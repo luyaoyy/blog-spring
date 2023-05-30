@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.blue.mapper.MessageMapper">
+
+    <resultMap id="messageInfo" type="Message">
+        <id property="messageId" column="message_id"/>
+        <result property="messageContent" column="message_content"/>
+        <result property="messageCreateTime" column="message_create_time"/>
+        <association property="userInfoDto" javaType="com.blue.dto.UserInfoDto">
+            <id property="userId" column="user_id"/>
+            <result property="username" column="username"/>
+            <result property="gender" column="gender"/>
+            <result property="motto" column="motto"/>
+            <result property="career" column="career"/>
+            <result property="avatar" column="avatar"/>
+            <result property="background" column="background"/>
+            <result property="createTime" column="create_time"/>
+            <result property="userStatus" column="user_status"/>
+            <result property="userRank" column="user_rank"/>
+        </association>
+    </resultMap>
+    <select id="getMessageList" resultMap="messageInfo">
+        select m.*,
+               u.username,
+               u.gender,
+               u.motto,
+               u.career,
+               u.avatar,
+               u.background,
+               u.create_time,
+               u.user_status,
+               u.user_rank
+        from message m
+                 left join user u on
+            m.user_id = u.user_id
+        order by m.message_create_time desc
+    </select>
+</mapper>

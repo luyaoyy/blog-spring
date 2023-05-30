@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.blue.mapper.ArticleMapper">
+
+    <resultMap id="articleInfo" type="Article">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="blogDescribe" column="blog_describe"/>
+        <result property="htmlContent" column="html_content"/>
+        <result property="mdContent" column="md_content"/>
+        <result property="tag" column="tag"/>
+        <result property="type" column="type"/>
+        <result property="cover" column="cover"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <association property="userInfoDto" javaType="com.blue.dto.UserInfoDto">
+            <id property="userId" column="user_id"/>
+            <result property="username" column="username"/>
+            <result property="gender" column="gender"/>
+            <result property="motto" column="motto"/>
+            <result property="career" column="career"/>
+            <result property="avatar" column="avatar"/>
+            <result property="background" column="background"/>
+            <result property="createTime" column="create_time"/>
+            <result property="userStatus" column="user_status"/>
+            <result property="userRank" column="user_rank"/>
+        </association>
+    </resultMap>
+    <select id="getArticleList" resultMap="articleInfo">
+        select a.*,
+               u.username,
+               u.gender,
+               u.motto,
+               u.career,
+               u.avatar,
+               u.background,
+               u.create_time as user_create_time,
+               u.user_status,
+               u.user_rank
+        from article a
+                 left join user u on
+            a.user_id = u.user_id
+    </select>
+
+    <select id="showArticleDetail" resultMap="articleInfo">
+        select a.*,
+               u.username,
+               u.gender,
+               u.motto,
+               u.career,
+               u.avatar,
+               u.background,
+               u.create_time as user_create_time,
+               u.user_status,
+               u.user_rank
+        from article a
+                 left join user u on
+            a.user_id = u.user_id
+        where a.id = #{id}
+    </select>
+
+    <select id="getHotArticleList" parameterType="java.util.List" resultMap="articleInfo">
+        select a.*,u.username,u.gender,u.motto,u.avatar,u.background,u.create_time as
+        user_create_time,u.user_status,u.user_rank from
+        article a left join user u on
+        a.user_id = u.user_id
+        where a.id in
+        <foreach collection="list" index="index" item="item" open="("
+                 separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="getRandomArticle" resultMap="articleInfo">
+        SELECT t1.*,
+               u.username,
+               u.gender,
+               u.motto,
+               u.career,
+               u.avatar,
+               u.background,
+               u.create_time as user_create_time,
+               u.user_status,
+               u.user_rank
+        FROM `article` AS t1
+                 JOIN (SELECT ROUND(
+                                              RAND() * (
+                                                  (SELECT MAX(id) FROM `article`) - (SELECT MIN(id) FROM `article`)) +
+                                              (SELECT MIN(id) FROM `article`)) AS id) AS t2
+                 LEFT JOIN USER u ON t1.user_id = u.user_id
+        WHERE t1.id >= t2.id
+        ORDER BY t1.id
+        LIMIT 1;
+    </select>
+
+    <select id="getRecommendArticle" resultMap="articleInfo">
+        select a.*,
+               u.username,
+               u.gender,
+               u.motto,
+               u.career,
+               u.avatar,
+               u.background,
+               u.create_time as user_create_time,
+               u.user_status,
+               u.user_rank
+        from article a
+                 left join user u on
+            a.user_id = u.user_id
+        where a.tag regexp #{tag}
+          and a.id != #{id}
+        limit 5
+    </select>
+
+    <select id="getArticleByType" resultMap="articleInfo">
+        select a.*,
+               u.username,
+               u.gender,
+               u.motto,
+               u.career,
+               u.avatar,
+               u.background,
+               u.create_time as user_create_time,
+               u.user_status,
+               u.user_rank
+        from article a
+                 left join user u on
+            a.user_id = u.user_id
+        where a.type like concat("%", #{type}, "%")
+    </select>
+
+    <select id="getArticleByTag" resultMap="articleInfo">
+        select a.*,
+               u.username,
+               u.gender,
+               u.motto,
+               u.career,
+               u.avatar,
+               u.background,
+               u.create_time as user_create_time,
+               u.user_status,
+               u.user_rank
+        from article a
+                 left join user u on
+            a.user_id = u.user_id
+        where a.tag like concat("%", #{tag}, "%")
+    </select>
+
+</mapper>

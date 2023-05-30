@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.blue.mapper.UserMapper">
+    <select id="getInfoByName" resultType="com.blue.dto.UserInfoDto">
+        select user_id,
+               username,
+               gender,
+               career,
+               motto,
+               avatar,
+               background,
+               create_time,
+               user_status,
+               user_rank
+        from user
+        where username = #{username}
+    </select>
+    <select id="getInfoById" resultType="com.blue.dto.UserInfoDto">
+        select user_id,
+               username,
+               gender,
+               career,
+               motto,
+               avatar,
+               background,
+               create_time,
+               user_status,
+               user_rank
+        from user
+        where user_id = #{userId}
+    </select>
+</mapper>

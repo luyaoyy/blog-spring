@@ -1,0 +1,41 @@
+#yml文件配置
+
+server:
+  port: 9000
+spring:
+  jackson:
+    time-zone: GMT+8
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 120.46.205.130
+    port: 6666
+    #使用0号数据库
+    database: 0
+    #连接超时时间
+    connect-timeout: 1000000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: 100000ms
+        #最大空闲连接数
+        max-idle: 200
+        #最小空闲连接数
+        min-idle: 0
+  servlet:
+    multipart:
+      max-file-size: 35MB
+      max-request-size: 35MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true #下划线映射为字母大写
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.blue.pojo
+  mapper-locations: classpath:mapper/*.xml
+
+
+

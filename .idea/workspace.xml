@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3f407275-0cbf-411c-af2d-71ee13465176" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="17" />
+    <option name="vmOptions" value="-DarchetypeCatalog=local" />
+  </component>
+  <component name="ProjectId" id="2PlPyGDks3nabAPhAkUMmsrTGwx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/springboot/blog-vue",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "spring.configuration.checksum": "54810dd32c29a9569a8e2f48be3fa66b",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springboot\blog-spring\src\main\resources\static\music" />
+      <recent name="D:\springboot\blog-spring\src\main\resources\static\images" />
+      <recent name="D:\springboot\blog-spring\src\main\resources\static" />
+      <recent name="D:\springboot\blog-spring\src\main\java\com\blue" />
+      <recent name="D:\springboot\blog-spring\src\main\resources\mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\springboot\blog-spring\src\main\resources\static\images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.blue.config" />
+      <recent name="com.blue.handler" />
+      <recent name="com.blue.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogSpringApplication">
+    <configuration name="BlogSpringApplicationTests.hash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.blue" />
+      <option name="MAIN_CLASS_NAME" value="com.blue.BlogSpringApplicationTests" />
+      <option name="METHOD_NAME" value="hash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogSpringApplicationTests.list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.blue" />
+      <option name="MAIN_CLASS_NAME" value="com.blue.BlogSpringApplicationTests" />
+      <option name="METHOD_NAME" value="list" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogSpringApplicationTests.t" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.blue" />
+      <option name="MAIN_CLASS_NAME" value="com.blue.BlogSpringApplicationTests" />
+      <option name="METHOD_NAME" value="t" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogSpringApplicationTests.t1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.blue" />
+      <option name="MAIN_CLASS_NAME" value="com.blue.BlogSpringApplicationTests" />
+      <option name="METHOD_NAME" value="t1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogSpringApplicationTests.zSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.blue" />
+      <option name="MAIN_CLASS_NAME" value="com.blue.BlogSpringApplicationTests" />
+      <option name="METHOD_NAME" value="zSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog-spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.blue.BlogSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BlogSpringApplicationTests.list" />
+        <item itemvalue="JUnit.BlogSpringApplicationTests.t" />
+        <item itemvalue="JUnit.BlogSpringApplicationTests.hash" />
+        <item itemvalue="JUnit.BlogSpringApplicationTests.zSet" />
+        <item itemvalue="JUnit.BlogSpringApplicationTests.t1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f407275-0cbf-411c-af2d-71ee13465176" name="Changes" comment="" />
+      <created>1684028948673</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684028948673</updated>
+      <workItem from="1684028950016" duration="6611000" />
+      <workItem from="1684047262855" duration="7280000" />
+      <workItem from="1684109078917" duration="6093000" />
+      <workItem from="1684146578008" duration="3795000" />
+      <workItem from="1684195817689" duration="8827000" />
+      <workItem from="1684243075743" duration="1248000" />
+      <workItem from="1684244606803" duration="2411000" />
+      <workItem from="1684282629612" duration="20236000" />
+      <workItem from="1684383354032" duration="1568000" />
+      <workItem from="1684389973839" duration="12706000" />
+      <workItem from="1684415034963" duration="4677000" />
+      <workItem from="1684454305118" duration="19343000" />
+      <workItem from="1684494332506" duration="7771000" />
+      <workItem from="1684544912332" duration="24508000" />
+      <workItem from="1684630535985" duration="18700000" />
+      <workItem from="1684714684819" duration="24515000" />
+      <workItem from="1684762062134" duration="1628000" />
+      <workItem from="1684800662621" duration="17558000" />
+      <workItem from="1684838156849" duration="2748000" />
+      <workItem from="1684851523429" duration="266000" />
+      <workItem from="1684851815295" duration="5934000" />
+      <workItem from="1684886715741" duration="6082000" />
+      <workItem from="1684893273313" duration="12720000" />
+      <workItem from="1684919279066" duration="1785000" />
+      <workItem from="1684926010241" duration="16000" />
+      <workItem from="1684926776324" duration="3394000" />
+      <workItem from="1684941335360" duration="1216000" />
+      <workItem from="1684972922096" duration="19308000" />
+      <workItem from="1685024762850" duration="2072000" />
+      <workItem from="1685059794816" duration="10653000" />
+      <workItem from="1685080721976" duration="10049000" />
+      <workItem from="1685096746560" duration="4882000" />
+      <workItem from="1685161353713" duration="7948000" />
+      <workItem from="1685185756579" duration="6046000" />
+      <workItem from="1685276886958" duration="2283000" />
+      <workItem from="1685279208003" duration="4760000" />
+      <workItem from="1685319292453" duration="11155000" />
+      <workItem from="1685350898147" duration="10393000" />
+      <workItem from="1685405410977" duration="5867000" />
+      <workItem from="1685433990859" duration="608000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
